@@ -1,6 +1,7 @@
 .include "${.CURDIR}/../../editors/libreoffice/Makefile.common"
 
-MASTER_SITES=	https://download.documentfoundation.org/libreoffice/${MASTER_SITE_SUBDIR}/
+MASTER_SITES=	https://download.documentfoundation.org/libreoffice/${MASTER_SITE_SUBDIR}/ \
+		https://downloadarchive.documentfoundation.org/libreoffice/${MASTER_SITE_SUBDIR}/
 .if defined(PRERELEASE)
 MASTER_SITES+=	https://dev-builds.libreoffice.org/pre-releases/deb/x86_64/
 MASTER_SITE_SUBDIR=	testing/${LOVERSION}/deb/x86_64
@@ -11,7 +12,7 @@ LO_NAME=	LibreOffice
 .	endif
 LO_I18N_FILE=	${LO_NAME}_${DISTVERSION}_Linux_x86-64_deb
 .else
-MASTER_SITE_SUBDIR=	stable/${LOVERSION}/deb/x86_64
+MASTER_SITE_SUBDIR=	old/${DISTVERSION}/deb/x86_64
 LO_NAME=	LibreOffice
 LO_I18N_FILE=	${LO_NAME}_${LOVERSION}_Linux_x86-64_deb
 .endif

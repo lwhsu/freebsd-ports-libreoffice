@@ -1,5 +1,5 @@
-TIMESTAMP = 1673384564
-SHA256 (libreoffice/i18n/LibreOffice_7.4.4.1_Linux_x86-64_deb_langpack_zh-CN.tar.gz) = e3baf7cfdae35768274849dffd3fcc6b1fd0e89a34bea99f5849406d4c2e5471
-SIZE (libreoffice/i18n/LibreOffice_7.4.4.1_Linux_x86-64_deb_langpack_zh-CN.tar.gz) = 799046
-SHA256 (libreoffice/i18n/LibreOffice_7.4.4.1_Linux_x86-64_deb_helppack_zh-CN.tar.gz) = bee6fec659e80e698783c26f13ebb88c4fb2f6a04c216012a3a423ed9006b604
-SIZE (libreoffice/i18n/LibreOffice_7.4.4.1_Linux_x86-64_deb_helppack_zh-CN.tar.gz) = 3350606
+TIMESTAMP = 1673555895
+SHA256 (libreoffice/i18n/LibreOffice_7.4.4_Linux_x86-64_deb_langpack_zh-CN.tar.gz) = 99dc2de19f5e4eccbd8199d9f81d4364d2a8f2f1c0dc8605214cf16a808296bf
+SIZE (libreoffice/i18n/LibreOffice_7.4.4_Linux_x86-64_deb_langpack_zh-CN.tar.gz) = 799335
+SHA256 (libreoffice/i18n/LibreOffice_7.4.4_Linux_x86-64_deb_helppack_zh-CN.tar.gz) = efd158cbb9a8994f5531abeda3d2cc5e761e90de0bf00eb4a72eea15c674a56a
+SIZE (libreoffice/i18n/LibreOffice_7.4.4_Linux_x86-64_deb_helppack_zh-CN.tar.gz) = 3350531

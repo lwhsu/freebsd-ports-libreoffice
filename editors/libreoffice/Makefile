@@ -10,6 +10,7 @@ DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX} \
 DIST_SUBDIR=	libreoffice
 EXTRACT_ONLY:=	${DISTFILES}
 
+#ZXing 2.0.0
 PATCH_SITES+=	https://github.com/LibreOffice/core/commit/
 PATCHFILES+=	15e5d86cc55ad94ac946e04d5e25b84be5810970.diff:-p1
 
@@ -54,6 +55,7 @@ LIB_DEPENDS=	libapr-1.so:devel/apr1 \
 		libpng.so:graphics/png \
 		libpoppler.so:graphics/poppler \
 		libqrcodegencpp.so:graphics/qr-code-generator \
+		libtiff.so:graphics/tiff \
 		libwebp.so:graphics/webp \
 		liblpsolve55.so:math/lp_solve \
 		libcmis-0.5.so:net/libcmis \
@@ -134,7 +136,7 @@ OPTIONS_DEFINE=	COINMP CUPS DOCS GNOME GTK3 GTK4 JAVA KF5 LTO MMEDIA PDFIUM PGSQ
 OPTIONS_RADIO=	QT
 OPTIONS_RADIO_QT=	QT5 QT6
 OPTIONS_DEFAULT=	CUPS DOCS JAVA MMEDIA PDFIUM QT5
-OPTIONS_EXCLUDE=	GTK4
+#OPTIONS_EXCLUDE=	GTK4
 
 COINMP_DESC=	Enable CoinMP (deprecated) math solver
 GTK4_DESC=	GTK+ 4 GUI toolkit support (broken)
@@ -169,6 +171,7 @@ GNOME_USE=	GNOME=dconf
 GTK3_CONFIGURE_ENABLE=	gtk3
 GTK3_USE=	GNOME=gtk30
 
+GTK4_BROKEN=		GTK4 is still experimental and breaks in compat code
 GTK4_CONFIGURE_ENABLE=	gtk4
 GTK4_USE=	GNOME=gtk40
 
@@ -290,6 +293,7 @@ CONFIGURE_ARGS=	--disable-dependency-tracking \
 		--with-system-gpgmepp \
 		--with-system-libfixmath=no \
 		--with-system-libs \
+		--with-system-libtiff \
 		--with-system-libxml \
 		--with-system-mdds \
 		--with-system-nss \
